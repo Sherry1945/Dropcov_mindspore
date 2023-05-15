@@ -39,7 +39,10 @@ CUDA 11.1
 ```bash
 conda install mindspore-gpu cudatoolkit=11.1 -c mindspore -c conda-forge
 ```
-
+validataion 
+```bash
+python -c "import mindspore;mindspore.run_check()"
+```
 ### Data preparation
 
 Download and extract ImageNet train and val images from http://image-net.org/. 
