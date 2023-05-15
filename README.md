@@ -24,9 +24,9 @@ Post-normalization plays a key role in deep global covariance pooling (GCP) netw
 
 ### Install
 
-●First, Install the driver of NVIDIA 
-●Then, Install the driver of CUDA 
-●Last, Install cudnn 
+●First, Install the driver of NVIDIA  
+●Then, Install the driver of CUDA  
+●Last, Install cudnn  
 
 create virtual enviroment mindspore
 conda create -n mindspore python=3.7.5 -y
