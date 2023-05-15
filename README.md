@@ -68,7 +68,7 @@ and the training and validation data is expected to be in the `train/` folder an
 To evaluate a pre-trained model on ImageNet val with GPUs run:
 
 ```bash
-CUDA_VISIBLE_DEVICES={device_ids}  python  -u main.py  -e -a {model_name} --resume {checkpoint-path} {imagenet-path}
+CUDA_VISIBLE_DEVICES={device_ids}  python eval.py --data_path={IMAGENET_PATH} --checkpoint_file_path={CHECKPOINT_PATH} --device_target="GPU" --config_path={CONFIG_FILE} &> log &
 ```
 
 
