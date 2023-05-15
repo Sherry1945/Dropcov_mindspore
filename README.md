@@ -23,11 +23,21 @@ Post-normalization plays a key role in deep global covariance pooling (GCP) netw
 ●GPU:GTX 3090 
 
 ### Install
-First, clone the repo and install requirements:
 
+●First, Install the driver of NVIDIA
+●Then, Install the driver of CUDA
+●Last, Install cudnn
+
+create virtual enviroment mindspore
+conda create -n mindspore python=3.7.5 -y
+conda activate mindspore
+CUDA 10.1 
 ```bash
-git clone https://github.com/mingzeG/Dropcov_mindspore.git
-pip install -r requirements.txt
+conda install mindspore-gpu cudatoolkit=10.1 -c mindspore -c conda-forge
+```
+CUDA 11.1 
+```bash
+conda install mindspore-gpu cudatoolkit=11.1 -c mindspore -c conda-forge
 ```
 
 ### Data preparation
