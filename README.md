@@ -58,16 +58,6 @@ To evaluate a pre-trained model on ImageNet val with GPUs run:
 CUDA_VISIBLE_DEVICES={device_ids}  python  -u main.py  -e -a {model_name} --resume {checkpoint-path} {imagenet-path}
 ```
 
-For example, to evaluate the Dropcov method, run
-
-```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -e -a resnet18_ACD --resume ./r18_64_acd_best.pth.tar ./dataset/ILSVRC2012
-```
-
-giving
-```bash
-* Acc@1 73.5 Acc@5 91.2
-```
 
 ### Training
 
@@ -83,17 +73,7 @@ For example:
 ```bash
 CUDA_VISIBLE_DEVICES=0,1,2,3 python  -u main.py  -a resnet18_ACD --epochs 100 --b 256 --lr_mode LRnorm  ./dataset/ILSVRC2012
 ```
-#### Train with Swin-T
-`Swin-T`:
 
-```bash
-python -m torch.distributed.launch --nproc_per_node 8 --master_port 12345  main.py  --cfg configs/swin/swin_tiny_patch4_window7_224.yaml --data-path <imagenet-path> --batch-size 128 
-```
-#### Train with Deit-S and T2T-ViT-14
-`Deit-S`:
-```bash
-sh ./scripts/train_Deit_drop_Small.sh
-```
 ## Citation
 
 ```
