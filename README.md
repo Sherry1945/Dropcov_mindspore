@@ -12,8 +12,8 @@ Post-normalization plays a key role in deep global covariance pooling (GCP) netw
 
 |Method           | Acc@1(%) | #Params.(M) | FLOPs(G) | Checkpoint                                                          |
 | ------------------ | ----- | ------- | ----- | ------------------------------------------------------------ |
-| ResNet-50   |  76.02 |  25.6   |   3.86  |               |
-| ResNet-50+DropCov(Ours)   | 78.19  |   32.0  |  6.19   |[Download](https://drive.google.com/file/d/1235CUjS7va_h6weWQeAwFZ_J1iOqmaDm/view?usp=sharing)|
+| ResNet-50   |  76.07 |  25.6   |   3.86  |               |
+| ResNet-50+DropCov(Ours)   | 77.77  |   32.0  |  6.19   |[Download](https://drive.google.com/file/d/1235CUjS7va_h6weWQeAwFZ_J1iOqmaDm/view?usp=sharing)|
 
 ## Usage
 ### Environments
