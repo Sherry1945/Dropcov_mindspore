@@ -19,11 +19,11 @@ checkpoint_file_path: ""
 optimizer: "Momentum"
 infer_label: ""
 class_num: 1001
-batch_size: 256
+batch_size: 64
 loss_scale: 1024
 momentum: 0.9
 weight_decay: 0.0001
-epoch_size: 90
+epoch_size: 100
 pretrain_epoch_size: 0
 save_checkpoint: True
 save_checkpoint_epochs: 1
@@ -37,13 +37,14 @@ lr_max: 0.8
 lr_end: 0.0
 lars_epsilon: 0.0
 lars_coefficient: 0.001
-
+start_epoch: 0
+resume_ckpt: ""
 net_name: "resnet18"
 dataset: "imagenet2012"
-device_num: 1
+device_num: 4
 pre_trained: ""
 run_eval: False
-eval_dataset_path: ""
+eval_dataset_path: "/home/a/zhuangxu/imagenet/ILSVRC2012/images/val"
 parameter_server: False
 filter_weight: False
 save_best_ckpt: True

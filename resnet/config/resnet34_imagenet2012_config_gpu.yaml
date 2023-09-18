@@ -19,14 +19,14 @@ checkpoint_file_path: ""
 optimizer: "Momentum"
 infer_label: ""
 class_num: 1001
-batch_size: 128
+batch_size: 64
 loss_scale: 1024
 momentum: 0.9
 weight_decay: 0.0001
-epoch_size: 90
+epoch_size: 100
 pretrain_epoch_size: 0
 save_checkpoint: True
-save_checkpoint_epochs: 5
+save_checkpoint_epochs: 1
 keep_checkpoint_max: 10
 warmup_epochs: 2
 lr_decay_mode: "linear"
@@ -40,7 +40,7 @@ lars_coefficient: 0.001
 
 net_name: "resnet34"
 dataset: "imagenet2012"
-device_num: 1
+device_num: 4
 pre_trained: ""
 run_eval: False
 eval_dataset_path: ""
@@ -51,7 +51,7 @@ eval_start_epoch: 40
 eval_interval: 1
 enable_cache: False
 cache_session_id: ""
-mode_name: "GRAPH"
+mode_name: "PYNATIVE_MODE"
 boost_mode: "O0"
 conv_init: "XavierUniform"
 dense_init: "TruncatedNormal"
